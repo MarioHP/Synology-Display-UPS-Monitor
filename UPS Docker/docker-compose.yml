@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ups-to-serial:
+    build: .            # <-- sestaví obraz z Dockerfile v aktuální složce
+    image: ups-to-serial
+    container_name: ups-to-serial
+    restart: unless-stopped
+    network_mode: host
+    devices:
+      - /dev/ups-serial:/dev/ups-serial
