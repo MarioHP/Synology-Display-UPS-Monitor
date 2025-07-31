@@ -36,7 +36,7 @@ Zkopíruj do ní následující soubory:
 - `Saved Sessions`: Libovolný název → klikni na **Save**
 
 
-## 6. Zjištění portu TTGO
+## 6. Zjištění portu TTGO T-Display
 
 ### Připoj se přes SSH pomocí PuTTY a spusť:
 ```bash
