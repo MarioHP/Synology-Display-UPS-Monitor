@@ -16,7 +16,7 @@
 
 - Ovládací panel → Sdílená složka → Vytvořit složku s názvem `docker`
 
-**Zkopíruj do ní následující soubory:**
+**Zkopíruj do ní následující soubory z UPS Docker:**
 
 - `Dockerfile`
 - `ups_to_ttgo.py`
