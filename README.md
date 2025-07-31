@@ -1,4 +1,4 @@
-# UPS-to-Serial – Návod pro Synology NAS
+# Návod pro Synology NAS
 
 ## 1. Instalace Pythonu
 
@@ -77,3 +77,14 @@ ls -l /dev/ups-serial
 ```
 
 > lrwxrwxrwx 1 root root 7 Jul 31 09:55 /dev/ups-serial -> ttyACM0
+
+## 7. Sestavení Docker obrazu
+
+### Přejdi do adresáře s Dockerfile: 
+```bash
+cd /volume1/docker/ups-to-serial/
+```
+### Sestav a spusť image:
+```bash
+sudo docker-compose up --build -d
+```
