@@ -16,7 +16,7 @@
 
 - Ovládací panel → Sdílená složka → Vytvořit složku s názvem `docker`
 
-Zkopíruj do ní následující soubory:
+**Zkopíruj do ní následující soubory:**
 
 - `Dockerfile`
 - `ups_to_ttgo.py`
@@ -25,11 +25,11 @@ Zkopíruj do ní následující soubory:
 
 ## 5. PuTTY – nastavení
 
-### Povolení vkládání zkopírovaných příkazů:
+**Povolení vkládání zkopírovaných příkazů:**
 - `Window → Selection → Action of mouse buttons: Windows (Right-click pastes)`
 
 
-### SSH připojení k NAS:
+**SSH připojení k NAS:**
 - `Session → Host Name`: IP adresa Synology
 - `Port`: 22  
 - `Connection Type`: SSH  
@@ -38,24 +38,24 @@ Zkopíruj do ní následující soubory:
 
 ## 6. Zjištění portu TTGO T-Display
 
-### Připoj se k Synology přes PuTTY Session (jméno a heslo) a získej identifikaci zařízení:
+**Připoj se k Synology přes PuTTY Session (jméno a heslo) a získej identifikaci zařízení:**
 ```bash
 ls /dev/tty*
 ```
 
 > mel by se ukázat nějaký připojený port např. /dev/ttyACM0
 
-### Postup vytvoření fixního názvu připojeného portu:
+**Postup vytvoření fixního názvu připojeného portu:**
 ```bash
 sudo udevadm info -a -n /dev/ttyACM0
 ```
 
-Hledej například:
+**Hledej například:**
 > - ATTRS{idVendor}=="1a86"
 > - ATTRS{idProduct}=="55d4"
 > - ATTRS{product}=="USB Single Serial"
 
-### Vytvoř udev pravidlo
+**Vytvoř udev pravidlo**
 ```bash
 sudo mkdir -p /etc/udev/rules.d
 ```
@@ -64,7 +64,7 @@ Uprav podle nalezených parametrů:
 echo 'SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d4", SYMLINK+="ups-serial"' | sudo tee /etc/udev/rules.d/99-ups-to-serial.rules
 ```
 
-### Aktivuj nové pravidlo:
+**Aktivuj nové pravidlo:**
 ```bash
 sudo udevadm control --reload-rules
 ```
@@ -72,7 +72,7 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-## Ověř funkčnost:
+**Ověř funkčnost:**
 ```bash
 ls -l /dev/ups-serial
 ```
@@ -81,17 +81,17 @@ ls -l /dev/ups-serial
 
 ## 7. Sestavení Docker obrazu
 
-### Přejdi do adresáře s Dockerfile: 
+**Přejdi do adresáře s Dockerfile:** 
 ```bash
 cd /volume1/docker/ups-to-serial/
 ```
-### Sestav a spusť image:
+**Sestav a spusť image:**
 ```bash
 sudo docker-compose up --build -d
 ```
 
 ## 8. Test
-### Ověř pomocí logu, že kontejner běží a vypisuje odesílaná data
+**Ověř pomocí logu, že kontejner běží a vypisuje odesílaná data**
 ```bash
 sudo docker logs -f ups-to-serial
 ```
