@@ -59,7 +59,7 @@ sudo udevadm info -a -n /dev/ttyACM0
 ```bash
 sudo mkdir -p /etc/udev/rules.d
 ```
-Uprav podle nalezených parametrů:
+**Uprav podle nalezených parametrů:**
 ```bash
 echo 'SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d4", SYMLINK+="ups-serial"' | sudo tee /etc/udev/rules.d/99-ups-to-serial.rules
 ```
