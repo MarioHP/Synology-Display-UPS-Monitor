@@ -38,7 +38,7 @@ Zkopíruj do ní následující soubory:
 
 ## 6. Zjištění portu TTGO T-Display
 
-### Připoj se přes SSH pomocí PuTTY a spusť:
+### Připoj se k Synology přes PuTTY Session (jméno a heslo) a získej identifikaci zařízení:
 ```bash
 ls /dev/tty*
 ```
@@ -88,3 +88,10 @@ cd /volume1/docker/ups-to-serial/
 ```bash
 sudo docker-compose up --build -d
 ```
+
+## 8. Test
+### Ověř pomocí logu, že kontejner běží a vypisuje odesílaná data
+```bash
+sudo docker logs -f ups-to-serial
+```
+> Odesláno: {"battery.charge": "100", "battery.runtime": "8830", "battery.voltage": "13.8", "device.model": "UT850EG", "input.voltage": "233.0", "output.voltage": "234.0", "battery.mfr.date": "CPS", "battery.type": "PbAcid"}
