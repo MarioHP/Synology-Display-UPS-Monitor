@@ -96,3 +96,10 @@ sudo docker-compose up --build -d
 sudo docker logs -f ups-to-serial
 ```
 > Sent: {"battery.charge": "100", "battery.runtime": "8830", "battery.voltage": "13.8", "device.model": "UT850EG", "input.voltage": "233.0", "output.voltage": "234.0", "battery.mfr.date": "CPS", "battery.type": "PbAcid"}
+
+
+**VIDEO**
+
+<a href="https://youtu.be/uTnPY-8pJW0">
+  <img src="https://img.youtube.com/vi/uTnPY-8pJW0/maxresdefault.jpg" width="600" alt="Watch the video">
+</a>
