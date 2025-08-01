@@ -1,21 +1,21 @@
-# Použijeme základní image Debianu (odlehčenou verzi Bullseye)
+# Použijeme odlehčený Debian Bullseye jako základ
 FROM debian:bullseye-slim
 
-# Aktualizace seznamu balíčků, instalace potřebného software:
-# - nut-client: nástroj upsc pro čtení dat z UPS
-# - python3: interpret jazyka Python 3
-# - python3-pip: správce balíčků pro Python
-# - pip3 install pyserial: instalace knihovny pro komunikaci po sériovém portu
-# Poté smažeme nepotřebné cache a seznamy pro menší velikost image
-RUN apt-get update && \
-    apt-get install -y nut-client python3 python3-pip && \
-    pip3 install pyserial && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+# Nastavení prostředí – potlačí interaktivní dotazy během instalace
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Zkopírujeme náš Python skript do kořenového adresáře image
+# Instalace závislostí a vyčištění mezipaměti pro menší image
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        nut-client \
+        python3 \
+        python3-pip \
+    && pip3 install --no-cache-dir pyserial \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Zkopíruj Python skript do image
 COPY ups_to_ttgo.py /ups_to_ttgo.py
 
-# Při startu kontejneru spustíme skript pomocí Pythonu 3
+# Spusť skript po startu kontejneru
 CMD ["python3", "/ups_to_ttgo.py"]
-
 
