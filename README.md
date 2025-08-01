@@ -1,3 +1,5 @@
+[🇬🇧 English](README.ENG.md)
+
 # Návod pro Synology NAS
 
 ## 1. Instalace Pythonu
