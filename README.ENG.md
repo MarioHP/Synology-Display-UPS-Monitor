@@ -1,5 +1,7 @@
 # Guide for Synology NAS
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/803339a9-ad88-4c91-ab43-5e1570b2866d" />
+
 ## 1. Installing Python
 
 - Package Center → Python 3.9 → Install
