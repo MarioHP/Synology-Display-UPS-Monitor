@@ -5,7 +5,7 @@
 ## 1. Installing packages
 
 - Package Center → Python 3.9 → Install
-- Package Center → Comtainer Manager → Install
+- Package Center → Container Manager → Install
 
 ## 2. Enabling SSH
 
