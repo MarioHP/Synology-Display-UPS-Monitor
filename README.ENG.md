@@ -1,4 +1,4 @@
-[🇨🇿 Read in Czech](README.md)  
+[Read in Czech](README.md)  
 
 # Guide for Synology NAS
 
