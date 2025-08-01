@@ -4,7 +4,12 @@
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/803339a9-ad88-4c91-ab43-5e1570b2866d" />
 
-3D print: https://www.printables.com/model/1371767-synology-cyberpower-ups-monitor
+3D print:
+
+https://www.printables.com/model/1371767-synology-cyberpower-ups-monitor
+
+https://makerworld.com/en/models/1659413-synology-cyberpower-ups-monitor
+
 
 ## 1. Installing packages
 
