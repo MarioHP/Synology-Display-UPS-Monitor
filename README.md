@@ -96,6 +96,9 @@ cd /volume1/docker/ups-to-serial/
 sudo docker-compose up --build -d
 ```
 
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/652cdbd4-05d7-4050-a57d-111bf29202e9" />
+
+
 ## 8. Test
 **Ověř pomocí logu, že kontejner běží a vypisuje odesílaná data**
 ```bash
