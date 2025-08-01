@@ -103,6 +103,25 @@ sudo docker logs -f ups-to-serial
 > Odesláno: {"battery.charge": "100", "battery.runtime": "8830", "battery.voltage": "13.8", "device.model": "UT850EG", "input.voltage": "233.0", "output.voltage": "234.0", "battery.mfr.date": "CPS", "battery.type": "PbAcid"}
 
 
+## **Software a funkce**
+
+Výchozí nastavení v **settings.h**
+
+- WIFI_SSID = ""; – název wifi
+- WIFI_PASSWORD = "";  – heslo na wifi
+
+- IPAddress local_IP(xxx,xxx,xxx,xxx); – IP adresa nonitoru v síti a v nastavení Synology (např. 192.168.2.119)
+- IPAddress gateway(xxx,xxx,xxx,xxx); – výchozí brána
+- IPAddress subnet(255,255,255,0); – maska sítě
+ 
+- const uint16_t upsPort = 3493; - port UPS
+- const char* upsName = "ups"; - jméno UPS
+ 
+- #define DEFAULT_LANGUAGE "cz" - výchozí jazyk čeština
+ 
+- const unsigned long WEBPAGE_RELOAD_INTERVAL_MS = 60000; - obnova stránky webového serveru (1 minuta).
+- const unsigned long SCREENSAVER_DELAY_MS = 30000;  - spořič obrazovky (30 sekund)
+
 **VIDEO**
 
 <a href="https://youtu.be/IzF-i7dTb5g">
