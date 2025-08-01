@@ -1,4 +1,4 @@
-[🇬🇧 English](README.ENG.md)
+[Continue in English](README.ENG.md)
 
 # Návod pro Synology NAS
 
