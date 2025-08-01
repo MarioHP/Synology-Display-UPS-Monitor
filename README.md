@@ -5,9 +5,10 @@
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/803339a9-ad88-4c91-ab43-5e1570b2866d" />
 
 
-## 1. Instalace Pythonu
+## 1. Instalace balíčků
 
 - Centrum balíčků → Python 3.9 → Nainstaluj
+- Centrum balíčků → Container Manager → Nainstaluj
 
 ## 2. Povolení SSH
 
