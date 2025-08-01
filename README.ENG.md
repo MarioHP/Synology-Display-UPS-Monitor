@@ -94,13 +94,13 @@ sudo docker-compose up --build -d
 
 ## 8. Test
 
-> <img width="700" alt="image" src="https://github.com/user-attachments/assets/9a900d00-821c-40f3-85bd-2e83cdd22f49" />
-
 **Check via logs that the container is running and sending data**
 ```bash
 sudo docker logs -f ups-to-serial
 ```
 > Sent: {"battery.charge": "100", "battery.runtime": "8830", "battery.voltage": "13.8", "device.model": "UT850EG", "input.voltage": "233.0", "output.voltage": "234.0", "battery.mfr.date": "CPS", "battery.type": "PbAcid"}
+
+> <img width="700" alt="image" src="https://github.com/user-attachments/assets/9a900d00-821c-40f3-85bd-2e83cdd22f49" />
 
 
 **VIDEO**
