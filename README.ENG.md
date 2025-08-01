@@ -94,6 +94,8 @@ sudo docker-compose up --build -d
 
 ## 8. Test
 
+> <img width="700" alt="image" src="https://github.com/user-attachments/assets/9a900d00-821c-40f3-85bd-2e83cdd22f49" />
+
 **Check via logs that the container is running and sending data**
 ```bash
 sudo docker logs -f ups-to-serial
