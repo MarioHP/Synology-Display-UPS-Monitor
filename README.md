@@ -4,6 +4,7 @@
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/803339a9-ad88-4c91-ab43-5e1570b2866d" />
 
+[![Watch the video](https://img.youtube.com/vi/uTnPY-8pJW0/maxresdefault.jpg)](https://youtu.be/uTnPY-8pJW0)
 
 ## 1. Instalace Pythonu
 
