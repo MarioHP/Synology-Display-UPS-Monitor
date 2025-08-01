@@ -100,6 +100,6 @@ sudo docker logs -f ups-to-serial
 
 **VIDEO**
 
-<a href="https://youtu.be/uTnPY-8pJW0">
-  <img src="https://img.youtube.com/vi/uTnPY-8pJW0/maxresdefault.jpg" width="600" alt="Watch the video">
+<a href="https://youtu.be/IzF-i7dTb5g">
+  <img src="https://img.youtube.com/vi/IzF-i7dTb5g/maxresdefault.jpg" width="600" alt="Watch the video">
 </a>
