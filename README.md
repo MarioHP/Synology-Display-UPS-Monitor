@@ -2,6 +2,9 @@
 
 # Návod pro Synology NAS
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/803339a9-ad88-4c91-ab43-5e1570b2866d" />
+
+
 ## 1. Instalace Pythonu
 
 - Centrum balíčků → Python 3.9 → Nainstaluj
@@ -99,6 +102,7 @@ sudo docker logs -f ups-to-serial
 ```
 > Odesláno: {"battery.charge": "100", "battery.runtime": "8830", "battery.voltage": "13.8", "device.model": "UT850EG", "input.voltage": "233.0", "output.voltage": "234.0", "battery.mfr.date": "CPS", "battery.type": "PbAcid"}
 
-WEBSERVER
+
+**WEBSERVER**
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/6389ee0a-e6a5-4f22-85ac-97b9d816ac4a" />
